@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* header */
+
+header.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 360px;
+    padding: 20px 3%;
+    background-color: rgba(255, 255, 2555, 0.7);
+    z-index: 100;
+}
+
+.header h1 {
+    float: left;
+}
+
+.header h1 a {
+    color: #444;
+}
+
+.header h1 span.pink {
+    color: #ff7094;
+}
+
+.header h1 span.blue {
+    color: #70aeff;
+}
+
+.header #gnb {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 112, 148, 0.7);
+}
+
+.header #gnb ul li a {
+    color: #ffffff;
+    padding: 14px 0 14px 5%;
+    display: block;
+    font-weight: bold;
+}
+
+.header #gnb ul li.active a {
+    color: #d0d0d0;
+    text-decoration: line-through;
+}
+
+.header span.menu_toggle_btn {
+    float: right;
+    width: 20px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.header span.menu_toggle_btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #444;
+}
+
+.header span.menu_toggle_btn span:nth-child(2) {
+    margin: 5px 0;
+}
+/* contents */
+#contents {
+    clear: both;
+}
+
+#contents>section {
+    min-width: 360px;
+    height: 100vh;
+}
+
+/* section1 */
+.section1 {
+    background: #ddd;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.section1 div.more {
+    width: 55.555555556%;
+    height: 50px;
+    padding: 12px;
+    font-weight: bold;
+    border: 2px solid #000;
+    margin: 0 auto;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+.section1 div.more a {
+    display: inline-block;
+}
+
+.section1 div.more:hover {
+    border: 2px solid #d0d0d0;
+    box-shadow: inset -15em 0 0 0 #fff,
+    inset 15em 0 0 0 #fff;
+}
+
+.section1 div.more:hover a {
+    color: #d0d0d0;
+}
+
+.section1 h2 {
+    line-height: 70px;
+    width: 55.555555556%;
+    font-size: 40px;
+    font-size: 2.45rem;
+    display: block;
+    border-bottom: 3px solid #000;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.section1 h3 {
+    line-height: 30px;
+    width: 55.555555556%;
+    display: block;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+/* section2 */
+
+.section2 {
+    padding: 60px 5%;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.section2>div {
+    margin: 0 auto;
+}
+
+.section2 h2 {
+    font-size: 30px;
+}
+
+.section2 div.profile {
+    width: 400px;
+    font-weight: 300;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.section2 div p {
+    display: block;
+}
+
+.section2 div p strong {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section2 div.profile ul li span {
+    line-height: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.section2 div.profile ul li span {
+    width: 100px;
+}
+
+/* section3 */
+
+.section3 {
+    padding: 60px 5%;
+    background: #d0d0d0;
+    text-align: center;
+}
+
+.section3 h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.section3 div.list {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.section3 div.pf {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 40px;
+    float: left;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.section3 div.pf_img {
+    width: 100%;
+    height: 100%;
+    padding-top: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.section3 div.pf h5 {
+    font-weight: 200;
+}
+
+.section3 div.pf div.colorOn {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: #ffffff;
+    background: rgba(112, 174, 255, 0.5);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+.section3 div.pf:hover div.colorOn {
+    opacity: 1;
+}
+
+.section3 div.pf div.line {
+    width: 220px;
+    height: 1px;
+    margin: 10px 0;
+    background: #fff;
+}
+
+.section3 div.pf_introduce {
+    display: none !important;
+    clear: both;
+    padding-top: 150px;
+}
+
+/* section4 */
+
+.section4 {
+    padding: 30% 5%;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.section4 h2 {
+    font-size: 30px;
+}
+
+.section4 input {
+    width: 400px;
+    height: 80px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.section4 textarea {
+    width: 400px;
+    height: 200px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.section4 button {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background: #70aeff;
+}
+
+/* footer */
+footer#footer {
+    width: 100%;
+    min-width: 360px;
+    padding: 20px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+/* 태블릿용 */
+@media all and (min-width: 768px) {
+    .header #gnb {
+        display: block !important;
+        position: static;
+        float: right;
+        width: auto;
+        padding-right: 15px;
+        margin-top: 10px;
+        background: none;
+    }
+    
+    .header #gnb ul li {
+        margin-left: 20px;
+        float: left;
+    }
+
+    .header #gnb ul li a {
+        color: #000000;
+        display: inline-block;
+    }
+
+    .header span.menu_toggle_btn {
+        display: none !important;
+    }
+
+    /* 태블릿버전 section1 */
+.section1 div.more {
+    width: 39.0625%;
+    max-width: 400px;
+    height: 50px;
+    padding: 13px;
+}
+
+.section1 h2 {
+    line-height: 100px;
+    width: 78.125%;
+    min-width: 645px;
+    max-width: 800px;
+    font-size: 60px;
+    font-size: 4rem;
+}
+
+.section1 h3 {
+    line-height: 50px;
+    width: 78.125%;
+    min-width: 645px;
+    max-width: 800px;
+}
+
+/* 태블릿버전 section2 */
+
+.section2 {
+    padding: 100px 5%;
+}
+
+.section2 h2 {
+    font-size: 40px;
+}
+
+.section2>div {
+    width: 90%;
+    display: flex;
+    margin-top: 4%;
+}
+
+.section2 div.profile_img {
+    width: 52.083333%;
+    min-width: 400px;
+}
+
+.section2 div.profile {
+    width: 40%;
+    font-weight: 300;
+    padding: 2.604167% 0 0;
+    margin-left: 6.604167%;
+}
+
+.section2 div p {
+    margin-bottom: 1.302083%;
+}
+
+.section2 div p strong {
+    font-size: 1.8em;
+    margin-bottom: 0.0390625%;
+}
+.section2 div p strong span {
+    display: block;
+}
+
+.section2 div.profile ul {
+    margin-top: 60px;
+}
+
+/* 태블릿버전 section3 */
+
+.section3 {
+    padding: 100px 5%;
+}
+
+.section3 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section3 div.list {
+    width: 80%;
+    margin-top: 130px;
+}
+
+.section3 div.pf {
+    width: 43.723958%;
+}
+
+.section3 div.pf:nth-child(odd) {
+    margin-right: 12.552084%; 
+}
+
+.section3 div.pf_introduce {
+    display: block !important;
+}
+/* 태블릿버전 section4 */
+
+.section4 {
+    padding: 100px 5%;
+}
+
+.section4 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section4 input {
+    width: 70.671378%;
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.section4 textarea {
+    width: 70.671378%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.section4 button {
+    width: 400px;
+    height: 40px;
+}
+}
+
+/* 피시용 */
+@media all and (min-width: 1132px) {
+   
+/* pc버전 section2 */
+.section2>div {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.section2 div.profile {
+    width: 45%;
+    padding: 60px 0;
+    margin-left: 10.250883%;
+    line-height: 0.9;
+}
+
+.section2 div p {
+    margin-bottom: 20px;
+}
+
+.section2 div p strong {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section2 div.profile ul {
+    line-height: 50px;
+}
+
+/* pc버전 section3 */
+.section3 {
+    padding: 100px;
+}
+
+.section3 h2 {
+    margin-bottom: 50px;
+}
+
+.section3 div.list {
+    width: 100%;
+}
+.section3 div.pf {
+    width: 22.3498232%;
+    margin: 0 3.533569% 0 0 !important;
+}
+
+.section3 div.pf:last-child {
+    margin: 0 !important;
+}
+
+/* pc버전 section4 */
+
+.section4 {
+    padding: 100px;
+}
+
+.section4 h2 {
+    margin-bottom: 40px;
+}
+
+.section4 input {
+    width: 70.671378%;
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.section4 textarea {
+    width: 70.671378%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+}
